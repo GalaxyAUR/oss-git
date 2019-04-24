@@ -86,7 +86,7 @@ prepare() {
 
 build() {
   cd "$srcdir/oss/build"
-  ../configure --enable-libsalsa=NO --regparm --config-midi=YES
+  ../configure --config-midi=YES
   make build
   gcc $CFLAGS -shared -fPIC -Wall -Werror oss/lib/flashsupport.c \
       -o libflashsupport.so

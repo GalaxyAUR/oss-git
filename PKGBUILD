@@ -25,6 +25,7 @@ source=(oss::git://git.code.sourceforge.net/p/opensound/git
         remove-hal.patch
         rm-init-scripts.patch
         soundon.patch
+        kmod-link2.patch
         kmod-link.patch
         ossvermagic.patch)
 sha512sums=('SKIP'
@@ -80,6 +81,7 @@ prepare() {
 
   # FS#35672
   mv oss/build/{osscore.c,osscore_wrapper.c}
+  patch -p2 < "$srcdir/kmod-link2.patch"
   patch -p2 < "$srcdir/kmod-link.patch"
   cd ../..
 }

@@ -13,10 +13,10 @@ pkgname=oss-git
 true && pkgname=(oss-git libflashsupport-oss-git)
 pkgver=7cf6b07
 pkgrel=1
-arch=(i686 x86_64)
+arch=(i686 x86_64 pentium4)
 url="http://developer.opensound.com/"
 license=(GPL2)
-makedepends=(gtk2 git)
+makedepends=(git)
 source=(oss::git://git.code.sourceforge.net/p/opensound/git
         oss4_sys-libs_glibc-2.23_ossdetect_fix_git.patch
         seawright.patch

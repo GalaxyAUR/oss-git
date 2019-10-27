@@ -109,6 +109,8 @@ package_oss-git() {
   pkgdesc="Open Sound System UNIX audio architecture"
   depends=(linux-headers)
   optdepends=('gtk2: for graphical mixer (ossxmix)'
+	      'libogg: for Ogg Vorbis support in ossplay'
+	      'libvorbis: for Ogg Vorbis support in ossplay'
               'libflashsupport-oss: Adobe flash plugin support')
   provides=(oss)
   conflicts=(oss oss-nonfree libflashsupport-oss libflashsupport-oss-nonfree)

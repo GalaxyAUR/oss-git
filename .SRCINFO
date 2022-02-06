@@ -1,5 +1,5 @@
 pkgbase = oss-git
-	pkgver = 3e7a6c4
+	pkgver = bd513a9
 	pkgrel = 1
 	url = http://developer.opensound.com/
 	arch = i686
@@ -52,4 +52,3 @@ pkgname = libflashsupport-oss-git
 	conflicts = libflashsupport-oss
 	conflicts = libflashsupport-oss-nonfree
 	conflicts = libflashsupport-pulse
-

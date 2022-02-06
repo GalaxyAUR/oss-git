@@ -11,7 +11,7 @@
 pkgbase=oss-git
 pkgname=oss-git
 true && pkgname=(oss-git libflashsupport-oss-git)
-pkgver=3e7a6c4
+pkgver=bd513a9
 pkgrel=1
 arch=(i686 x86_64 pentium4)
 url="http://developer.opensound.com/"
@@ -64,7 +64,8 @@ prepare() {
   # patch -p0 < "$srcdir/linux-4.8-usercopy.patch"
   # - no longer required (from commit 218878) 
   # patch -p1 < "$srcdir/galaxy.patch"
-  patch -p1 < "$srcdir/ossvermagic.patch"
+  # - no longer required (from commit bd513a) 
+  # patch -p1 < "$srcdir/ossvermagic.patch"
   patch -p1 < "$srcdir/extramodules.patch"
 
   # make OSS compile with glibc >= 2.23
